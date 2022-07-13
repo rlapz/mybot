@@ -35,7 +35,7 @@ async def set_afk(app, msg):
     _msg = " ".join(msg.command[1:])
     app.set_afk(True, msg.chat.id, _msg)
 
-    await app.edit_message_text(msg.chat.id, msg.id, "AFK!")
+    await app.edit_message_text(msg.chat.id, msg.id, "```AFK!```")
 
 @c.on_message(f.me)
 def hears(app, msg):
