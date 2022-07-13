@@ -1,6 +1,7 @@
 import os
 from pyrogram import Client, filters, idle
 from pyrogram.handlers import MessageHandler
+import config
 
 
 class MyBot(Client):
@@ -22,9 +23,9 @@ class MyBot(Client):
 
 
 app = MyBot(
-        api_id = os.getenv("API_ID"),
-        api_hash = os.getenv("API_HASH"),
-        workdir = os.getenv("WORKDIR"),
+        api_id = config.api_id,
+        api_hash = config.api_hash,
+        workdir = config.workdir,
         name = "My Bot",
         device_model = "Linux",
         app_version = "0.0.1",
