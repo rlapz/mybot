@@ -14,11 +14,19 @@ class MyBot(Client):
     async def _run(self):
         await self.start()
 
+        self.set_afk()
         self.me = await self.get_me()
         self.my_session = await self.export_session_string()
 
         await idle()
         await self.stop()
+
+    def set_afk(self, status=False, chat_id=-1, message=""):
+        self.afk = {
+            "status" : status,
+            "chat_id": chat_id,
+            "message": message,
+        }
 
 
 if __name__ == "__main__":
