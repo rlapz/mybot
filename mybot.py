@@ -1,3 +1,6 @@
+#!/bin/env python3
+
+
 import os
 from pyrogram import Client, filters, idle
 from pyrogram.handlers import MessageHandler

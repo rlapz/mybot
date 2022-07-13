@@ -9,7 +9,7 @@ source venv/bin/activate
 
 pip3 install -r requirements.txt
 
-cp example.env .env
+cp config.py.example config.py
 
-./run.sh
+./mybot.py
 ```
