@@ -21,13 +21,14 @@ class MyBot(Client):
         await self.stop()
 
 
-print("Let's go!")
-MyBot(
-    api_id = config.api_id,
-    api_hash = config.api_hash,
-    workdir = config.workdir,
-    name = "My Bot",
-    device_model = "Linux",
-    app_version = "0.0.1",
-    plugins = dict(root="plugins")
-)
+if __name__ == "__main__":
+    print("Let's go!")
+    MyBot(
+        api_id = config.api_id,
+        api_hash = config.api_hash,
+        workdir = config.workdir,
+        name = "My Bot",
+        device_model = "Linux",
+        app_version = "0.0.1",
+        plugins = dict(root="plugins")
+    )
