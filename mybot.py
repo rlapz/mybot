@@ -3,7 +3,6 @@
 
 import os
 from pyrogram import Client, filters, idle
-from pyrogram.handlers import MessageHandler
 import config
 
 
