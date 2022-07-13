@@ -2,7 +2,7 @@
 
 
 import os
-from pyrogram import Client, filters, idle
+from pyrogram import Client, idle
 import config
 
 
